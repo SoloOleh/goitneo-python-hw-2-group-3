@@ -28,7 +28,7 @@ def change_contact(args, contacts):
         contacts[name] = new_phone
         return "Contact updated."
     else:
-        return "Contact not found!"
+        raise KeyError
 
 @input_error
 def show_phone(args, contacts):
